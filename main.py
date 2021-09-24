@@ -15,8 +15,8 @@ text = Turtle()
 text.hideturtle()
 while len(states_user) < 50:
     user_input = screen.textinput(
-        title=f"total guesses states: {number_of_state_count}/50 Hint:you can exit the game by typing exit",
-        prompt="Enter one state of the US").title()
+        title="  type exit to end the game" ,
+        prompt=f"{number_of_state_count}/50 states found").title()
     if user_input == "Exit":
         missing_states_dict = {
             "states": names_of_the_states
