@@ -15,8 +15,8 @@ text = Turtle()
 text.hideturtle()
 while len(states_user) < 50:
     user_input = screen.textinput(
-        title="type exit to end the game" ,
-        prompt=f"{number_of_state_count}/50 states found").title()
+        title=f"{number_of_state_count}/50 states found" ,
+        prompt="Enter a state or type exit to exit the game").title()
     if user_input == "Exit":
         missing_states_dict = {
             "states": names_of_the_states
